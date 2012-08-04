@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerChatEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -27,7 +27,7 @@ public class ColorCom extends JavaPlugin implements Listener{
     }
      
     @EventHandler
-    public void onChat(PlayerChatEvent event) {
+    public void onChat(AsyncPlayerChatEvent event) {
         String finishedProduct = event.getMessage();
         
         Pattern blackColor = Pattern.compile("[^&]&0",Pattern.CASE_INSENSITIVE);
