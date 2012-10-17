@@ -30,7 +30,7 @@ public class ColorCom extends JavaPlugin implements Listener{
     public void onChat(AsyncPlayerChatEvent event) {
         String finishedProduct = event.getMessage();
         
-        Pattern blackColor = Pattern.compile("[^&]&0",Pattern.CASE_INSENSITIVE);
+        Pattern blackColor = Pattern.compile("&0",Pattern.CASE_INSENSITIVE);
         Pattern blueColor = Pattern.compile("&1",Pattern.CASE_INSENSITIVE);
         Pattern greenColor = Pattern.compile("&2",Pattern.CASE_INSENSITIVE);
         Pattern darkAquaColor = Pattern.compile("&3",Pattern.CASE_INSENSITIVE);
@@ -48,11 +48,11 @@ public class ColorCom extends JavaPlugin implements Listener{
         Pattern whiteColor = Pattern.compile("&f",Pattern.CASE_INSENSITIVE);
         
         Pattern magicColor = Pattern.compile("&k",Pattern.CASE_INSENSITIVE);
-	Pattern boldColor = Pattern.compile("&l",Pattern.CASE_INSENSITIVE);
-	Pattern strikeThroughColor = Pattern.compile("&m",Pattern.CASE_INSENSITIVE);
-	Pattern underlineColor = Pattern.compile("&n",Pattern.CASE_INSENSITIVE);
-	Pattern italicColor = Pattern.compile("&o",Pattern.CASE_INSENSITIVE);
-	Pattern resetColor = Pattern.compile("&r",Pattern.CASE_INSENSITIVE);
+	    Pattern boldColor = Pattern.compile("&l",Pattern.CASE_INSENSITIVE);
+	    Pattern strikeThroughColor = Pattern.compile("&m",Pattern.CASE_INSENSITIVE);
+	    Pattern underlineColor = Pattern.compile("&n",Pattern.CASE_INSENSITIVE);
+	    Pattern italicColor = Pattern.compile("&o",Pattern.CASE_INSENSITIVE);
+	    Pattern resetColor = Pattern.compile("&r",Pattern.CASE_INSENSITIVE);
         
         Pattern escapeCode = Pattern.compile("&§|&&");
         
